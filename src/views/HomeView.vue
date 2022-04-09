@@ -1,19 +1,23 @@
 <template>
   <div
-    class="w-full h-screen flex justify-start items-start flex-col bg-gray-900 px-5 py-2 select-none"
+    class="w-full h-screen flex justify-center items-center xs:justify-start xs:items-start flex-col bg-gray-900 px-5 py-2 select-none"
   >
     <div class="flex flex-row items-center gap-4">
-      <h1 class="text-9xl relative z-50 font-bold mix-blend-exclusion text-white">TerminalApe</h1>
+      <h1
+        class="text-5xl xs:text-7xl md:text-8xl lg:text-9xl relative z-50 font-bold mix-blend-exclusion text-white"
+      >TerminalApe</h1>
     </div>
     <div class="relative z-50 flex-col justify-center items-center">
-      <h3 class="text-2xl text-gray-400">This page is a work in progress</h3>
+      <h3
+        class="text-base xs:text-lg md:text-2xl text-gray-300 text-center xs:text-left"
+      >Hold your apes, this page is still being made.</h3>
     </div>
     <div
       id="bg-wrap"
-      class="absolute top-0 bottom-0 left-0 right-0 w-screen h-screen overflow-hidden z-0"
+      class="absolute top-0 bottom-0 left-0 right-0 w-screen h-screen min-h-screen overflow-hidden z-0"
     >
       <div class="relative w-full h-full">
-        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+        <svg viewBox="0 0 100 100" class="h-full w-full" preserveAspectRatio="xMidYMid slice">
           <defs>
             <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
               <animate attributeName="fx" dur="50s" values="0%;3%;0%" repeatCount="indefinite" />
@@ -37,8 +41,8 @@
             </radialGradient>
             <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5">
               <animate attributeName="fx" dur="40.5s" values="0%;5%;0%" repeatCount="indefinite" />
-              <stop offset="0%" stop-color="rgba(0,0,255, 1)" />
-              <stop offset="100%" stop-color="rgba(0,0,255, 0)" />
+              <stop offset="0%" stop-color="rgba(50,0,255, 1)" />
+              <stop offset="100%" stop-color="rgba(50,0,255, 0)" />
             </radialGradient>
             <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5">
               <animate attributeName="fx" dur="51.5s" values="0%;5%;0%" repeatCount="indefinite" />
@@ -46,21 +50,35 @@
               <stop offset="100%" stop-color="rgba(255,0,0, 0)" />
             </radialGradient>
           </defs>
-          <!--<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+          <!-- <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
 	<animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
 	<animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
 	<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
-	</rect>
-	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
-	<animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
-	<animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
-	<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
-	</rect>
-	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
-	<animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
-	<animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
-	<animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
           </rect>-->
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+            <animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+            <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 50 50"
+              to="360 50 50"
+              dur="18s"
+              repeatCount="indefinite"
+            />
+          </rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+            <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+            <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="360 50 50"
+              to="0 50 50"
+              dur="19s"
+              repeatCount="indefinite"
+            />
+          </rect>
           <rect
             x="13.744%"
             y="1.18473%"
@@ -69,8 +87,8 @@
             fill="url(#Gradient1)"
             transform="rotate(334.41 50 50)"
           >
-            <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
-            <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+            <animate attributeName="x" dur="30s" values="25%;0%;25%" repeatCount="indefinite" />
+            <animate attributeName="y" dur="31.5s" values="0%;25%;0%" repeatCount="indefinite" />
             <animateTransform
               attributeName="transform"
               type="rotate"

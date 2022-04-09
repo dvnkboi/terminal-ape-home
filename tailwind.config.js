@@ -1,10 +1,45 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        ...defaultTheme.spacing,
+        100: '25rem',
+        108: '27rem',
+        112: '29rem',
+        116: '31rem',
+      },
+      maxHeight: {
+        ...defaultTheme.spacing,
+        100: '25rem',
+        108: '27rem',
+        112: '29rem',
+        116: '31rem',
+      },
+      minWidth: {
+        ...defaultTheme.spacing,
+        100: '25rem',
+        108: '27rem',
+        112: '29rem',
+        116: '31rem',
+      },
+      minHeight: {
+        ...defaultTheme.spacing,
+        100: '25rem',
+        108: '27rem',
+        112: '29rem',
+        116: '31rem',
+      },
+    },
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
+    },
     fontFamily: {
       sans: [
         'Atkinson Hyperlegible',
